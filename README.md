@@ -63,7 +63,7 @@ The code sends a POST request to the following URL with the provided headers:
 ```cpp
 client.print(String("POST ") + githubApiPath + " HTTP/1.1\r\n" +
              "Host: " + githubApiHost + "\r\n" +
-             "Accept: application/vnd.github+json\r\n" +
+             "Accept: application/vnd.github+json\r\n"+
              "Authorization: Bearer " + githubToken + "\r\n" +
              "X-GitHub-Api-Version: 2022-11-28\r\n" +
              "Content-Type: application/json\r\n" +
